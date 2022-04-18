@@ -62,7 +62,7 @@ namespace PimpuTimer
             this.labelTimer.Name = "labelTimer";
             this.labelTimer.Size = new System.Drawing.Size(200, 76);
             this.labelTimer.TabIndex = 2;
-            this.labelTimer.Text = "21:37";
+            this.labelTimer.Text = "00:00";
             this.labelTimer.Click += new System.EventHandler(this.label1_Click);
             // 
             // TimerWindow

@@ -42,12 +42,13 @@ namespace PimpuTimer
         private void btnStop_Click(object sender, EventArgs e)
         {
             klok.Stop();
+            klok.Reset();
         }
 
         private void TimerWindow_Load(object sender, EventArgs e)
         {
             klok = new Clock();
-            klok.Init();
+            klok.Init(120);
         }
     }
 }

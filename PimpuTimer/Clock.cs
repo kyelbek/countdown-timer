@@ -7,12 +7,13 @@ namespace PimpuTimer
     public class Clock : Interruptable
     {
         private readonly Sound notification = new Sound();
-        private readonly int setTime = 120;
+        private int setTime;
         private int curTime, m, s;
 
-        public void Init()
+        public void Init(int seconds)
         {
-            curTime = setTime;
+            setTime = seconds;
+            if (setTime > 0) Reset();
             notification.Init(@"\ding.wav");
         }
 
@@ -23,9 +24,14 @@ namespace PimpuTimer
             return String.Format("{0:00}:{1:00}", m, s);
         }
 
+        public void Reset()
+        {
+            curTime = setTime;
+        }
+
         protected override void OnTick(object source, ElapsedEventArgs eventArgs)
         {
-            if (curTime <= 0) curTime = setTime;
+            if (curTime <= 0) Reset();
             curTime--;
             if (curTime <= 5) notification.Play();
         }
