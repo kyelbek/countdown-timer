@@ -73,6 +73,7 @@ namespace PimpuTimer
             this.Controls.Add(this.labelTimer);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TimerWindow";
