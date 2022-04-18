@@ -1,0 +1,10 @@
+C:\Users\MK\source\repos\PimpuTimer\PimpuTimer\obj\Debug\PimpuTimer.csproj.AssemblyReference.cache
+C:\Users\MK\source\repos\PimpuTimer\PimpuTimer\obj\Debug\PimpuTimer.Properties.Resources.resources
+C:\Users\MK\source\repos\PimpuTimer\PimpuTimer\obj\Debug\PimpuTimer.TimerWindow.resources
+C:\Users\MK\source\repos\PimpuTimer\PimpuTimer\obj\Debug\PimpuTimer.csproj.GenerateResource.cache
+C:\Users\MK\source\repos\PimpuTimer\PimpuTimer\obj\Debug\PimpuTimer.csproj.CoreCompileInputs.cache
+C:\Users\MK\source\repos\PimpuTimer\PimpuTimer\bin\Debug\PimpuTimer.exe.config
+C:\Users\MK\source\repos\PimpuTimer\PimpuTimer\bin\Debug\PimpuTimer.exe
+C:\Users\MK\source\repos\PimpuTimer\PimpuTimer\bin\Debug\PimpuTimer.pdb
+C:\Users\MK\source\repos\PimpuTimer\PimpuTimer\obj\Debug\PimpuTimer.exe
+C:\Users\MK\source\repos\PimpuTimer\PimpuTimer\obj\Debug\PimpuTimer.pdb
