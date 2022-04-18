@@ -26,15 +26,9 @@ namespace kyelbek
             /// </summary>
             public void Start(double interval)
             {
-                if (interval <= 0)
-                {
-                    throw new Exception("Interval must be greater than zero.");
-                }
+                if (interval <= 0) return;
+                if (_timerInstance.Enabled) return;
 
-                if (_timerInstance.Enabled)
-                {
-                    throw new Exception("This interrupt controller instance timer is already running.");
-                }
 
                 _timerInstance.Interval = interval;
                 Initialize();
