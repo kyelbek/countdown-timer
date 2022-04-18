@@ -17,9 +17,11 @@ namespace PimpuTimer
 
         private bool Load(string soundfile)
         {
-            soundPath = GetDir() + @"\assets" + soundfile;
-            if (!File.Exists(soundPath)) return false;
-            media = new SoundPlayer(soundPath);
+            //soundPath = GetDir() + @"\assets" + soundfile;
+            //if (!File.Exists(soundPath)) return false;
+            //media = new SoundPlayer(soundPath);
+            media = new SoundPlayer(Properties.Resources.ding);
+            media.Load();
             return true;
         }
 
