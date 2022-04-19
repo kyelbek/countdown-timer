@@ -15,19 +15,20 @@ namespace PimpuTimer
             return AppDomain.CurrentDomain.BaseDirectory;
         }
 
-        private bool Load(string soundfile)
+        public void Load(string soundfile)
         {
-            //soundPath = GetDir() + @"\assets" + soundfile;
-            //if (!File.Exists(soundPath)) return false;
-            //media = new SoundPlayer(soundPath);
-            media = new SoundPlayer(Properties.Resources.ding);
+            soundPath = GetDir() + soundfile;
+            if (!File.Exists(soundPath)) return;
+            media = new SoundPlayer(soundPath);
             media.Load();
-            return true;
+            isLoaded = true;
         }
 
-        public void Init(string soundfile)
+        public void Load(Stream soundstream)
         {
-            isLoaded = Load(soundfile);
+            media = new SoundPlayer(soundstream);
+            media.Load();
+            isLoaded = true;
         }
 
         public void Play()
