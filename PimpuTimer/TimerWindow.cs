@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Threading;
 using System.Windows.Forms;
 
@@ -31,7 +24,7 @@ namespace PimpuTimer
 
         private void label1_Click(object sender, EventArgs e)
         {
-            labelTimer.Text = klok.GetTimeString();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
